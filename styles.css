@@ -1,0 +1,380 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --primary-color1: rgb(108, 137, 255);
+  --primary-color2: rgb(46, 52, 109);
+  --primary-color3: rgba(35, 61, 166, 0.85);
+  --primary-color4: rgb(108, 167, 255);
+  --white: rgb(255, 255, 255);
+  --grey: rgb(248, 249, 255);
+  --text-basic: rgba(46, 52, 109, 0.7);
+}
+
+* {
+  margin: 0;
+  padding-right: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  color: var(--text-basic);
+  line-height: 1.6;
+  background: var(--grey);
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.header {
+  padding: 20px 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  background: var(--white);
+}
+
+.logo {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-toggle-label {
+  display: none;
+  cursor: pointer;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+
+.nav-toggle-label span,
+.nav-toggle-label span:before,
+.nav-toggle-label span:after {
+  content: "";
+  display: block;
+  background: var(--primary-color1);
+  height: 2px;
+  width: 18px;
+  border-radius: 3px;
+}
+
+.nav-toggle-label span:before,
+.nav-toggle-label span:after {
+  position: absolute;
+  transition: all 0.3s;
+}
+
+.nav-toggle-label span:before {
+  top: -6px;
+}
+
+.nav-toggle-label span:after {
+  bottom: -6px;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+#nav-toggle:checked + .nav-toggle-label span {
+  background: transparent;
+}
+
+#nav-toggle:checked + .nav-toggle-label span:before {
+  transform: rotate(45deg);
+  top: 0;
+}
+
+#nav-toggle:checked + .nav-toggle-label span:after {
+  transform: rotate(-45deg);
+  bottom: 0;
+}
+
+#nav-toggle:checked ~ .nav-menu {
+  display: flex;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  background: var(--grey);
+}
+
+.nav-menu li {
+  margin-left: 20px;
+}
+
+.nav-menu li a {
+  text-decoration: none;
+  color: rgba(46, 52, 109, 0.5);
+}
+
+.button {
+  background: var(--primary-color2);
+  color: var(--white);
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+}
+
+.header-content {
+  text-align: center;
+  padding: 20px;
+}
+
+.header-content h1 {
+  margin-top: 0;
+  font-size: 2em;
+  color: var(--primary-color2);
+}
+
+.ai-diagnosis {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.ai-diagnosis-text {
+  max-width: 500px;
+}
+
+.key-features {
+  display: flex;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.feature-box {
+  background: var(--primary-color1);
+  color: var(--white);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  flex: 1;
+  margin: 10px;
+}
+
+.mission {
+  padding: 20px 0;
+  text-align: center;
+}
+
+.statistics {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: 20px 0;
+}
+
+.stat-box {
+  flex: 1;
+  margin: 10px;
+  background: var(--grey);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.stat-details {
+  display: flex;
+  justify-content: space-between;
+}
+
+.detail {
+  margin: 10px;
+}
+
+.solution {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.solution-steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.step {
+  flex: 1;
+  margin: 10px;
+  background: var(--grey);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.features .container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.feature {
+  margin: 10px;
+  background: var(--primary-color1);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+  color: var(--white);
+}
+
+.body-parts {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.body-parts ul {
+  list-style: none;
+  padding: 0;
+}
+
+.body-parts ul li {
+  margin: 10px 0;
+  padding: 10px;
+  background: var(--grey);
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.boost {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px 0;
+}
+
+.boost-box {
+  flex: 1;
+  margin: 10px;
+  background: var(--grey);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.boost-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.boost-box ul li {
+  margin: 10px 0;
+}
+
+.summary {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.summary-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.detail-box {
+  flex: 1;
+  margin: 10px;
+  background: var(--grey);
+  padding: 20px;
+  border-radius: 5px;
+  text-align: center;
+}
+
+.footer {
+  background: var(--primary-color1);
+  color: var(--white);
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer input {
+  margin-bottom: 10px;
+  padding: 10px;
+  width: 300px;
+  max-width: 100%;
+}
+
+.submit {
+  padding: 10px 20px;
+  background: var(--white);
+  color: var(--primary-color2);
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+
+  .ai-diagnosis {
+    flex-direction: column;
+  }
+
+  .key-features,
+  .statistics,
+  .solution-steps,
+  .features,
+  .boost,
+  .summary-details {
+    flex-direction: column;
+  }
+
+  .nav-toggle-label {
+    display: block;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .nav-menu li {
+    margin: 0;
+  }
+
+  .nav-menu li a {
+    display: block;
+    padding: 10px;
+  }
+
+  #nav-toggle:checked + .nav-toggle-label + .nav-menu {
+    display: flex;
+  }
+
+  nav .button {
+    display: none;
+  }
+
+  .solution-steps {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .features .container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
