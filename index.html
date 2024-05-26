@@ -9,6 +9,30 @@
     <link
       rel="stylesheet"
       href="styles.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/imgs/favicons/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/imgs/favicons/favicon-16x16.png" />
+    <link
+      rel="manifest"
+      href="/site.webmanifest" />
+    <script
+      src="main.js"
+      defer></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </head>
   <body>
     <header class="header">
@@ -41,27 +65,82 @@
           >
         </nav>
         <div class="header-content">
-          <h1>End-to-end radiology automation</h1>
-          <p>
-            xAID is the AI that helps to analyse scans, write reports,
-            prioritise patients, notify doctors and manage follow-ups
-          </p>
-          <a
-            href="#"
-            class="button"
-            >Contact us</a
-          >
-          <div class="ai-diagnosis">
-            <div class="ai-diagnosis-text">
-              <h2>AI diagnosis of CT and MRI scans</h2>
-            </div>
+          <div class="left-block">
+            <h1>End-to-end radiology automation</h1>
+            <p>
+              xAID is the AI that helps to analyse scans, write reports,
+              prioritise patients, notify doctors and manage follow-ups
+            </p>
+            <a
+              href="#"
+              class="button"
+              >Contact us</a
+            >
           </div>
-          <div class="key-features">
-            <div class="feature-box">
-              <p>100+ hospitales</p>
+          <div class="right-block">
+            <div class="swiper swiper-diagnosis">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <h1>AI diagnosis of CT and MRI scans</h1>
+                  <img
+                    src="imgs/AI diagnosis.png"
+                    alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <h1>AI diagnosis of CT and MRI scans</h1>
+
+                  <img
+                    src="imgs/AI diagnosis.png"
+                    alt="" />
+                </div>
+                <div class="swiper-slide">
+                  <h1>AI diagnosis of CT and MRI scans</h1>
+
+                  <img
+                    src="imgs/AI diagnosis.png"
+                    alt="" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="swiper-button-next"></div>
             </div>
-            <div class="feature-box">
-              <p>AI medical visual and linguistic medical data analyzes</p>
+
+            <div class="key-features">
+              <div class="feature-box">
+                <p><span>100+</span> hospitales</p>
+              </div>
+              <div class="feature-box">
+                <div class="swiper swiper-solutions">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <h1>
+                        AI medical visual and linguistic medical data analyzes
+                      </h1>
+                      <img
+                        src="imgs/marketing.png"
+                        alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <h1>
+                        AI medical visual and linguistic medical data analyzes
+                      </h1>
+                      <img
+                        src="imgs/marketing.png"
+                        alt="" />
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        src="imgs/marketing.png"
+                        alt="" />
+                      <h1>
+                        AI medical visual and linguistic medical data analyzes
+                      </h1>
+                    </div>
+                  </div>
+                  <div class="swiper-pagination"></div>
+                  <div class="swiper-button-next"></div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -72,144 +151,278 @@
         <div class="container">
           <h1>Mission</h1>
           <h2>
-            Improving medical diagnostics and patient care through cutting-edge
-            AI technology
+            Improving <span>medical diagnostics</span> and
+            <span>patient care</span> through cutting-edge AI technology
           </h2>
           <p>First comprehensive AI solution in radiology</p>
         </div>
       </section>
       <section class="statistics">
         <div class="container">
-          <div class="stat-box">
-            <h3>Doctors</h3>
-            <p>
-              76% of clinical directors believe they do not have enough
-              radiologists to provide safe and effective patient care
-            </p>
-            <p>
-              The amount of work is going up, the amount of staff is going down
-            </p>
-            <div class="stat-details">
-              <div class="detail">
-                <h4>50%</h4>
-                <p>Increased physician burnout</p>
+          <div class="stat-box doctors">
+            <div class="stat-header">
+              <h3><span class="dot doctors-dot"></span>Doctors</h3>
+              <p>
+                76% of clinical directors believe they do not have enough
+                radiologists to provide safe and effective patient care
+              </p>
+              <p class="main-text">
+                The amount of work is going up, the amount of staff is going
+                down
+              </p>
+            </div>
+            <div class="chart">
+              <img
+                src="imgs/stat-chart.png"
+                alt="" />
+            </div>
+          </div>
+          <div class="stat-details">
+            <div class="detail">
+              <h4>50%</h4>
+              <p>Increased physician burnout</p>
+            </div>
+            <div class="detail">
+              <h4>51%</h4>
+              <p>of protocols contain at least 1 missed pathology</p>
+            </div>
+            <div class="detail">
+              <h4>50%</h4>
+              <p>Increased paper work</p>
+            </div>
+            <div class="detail">
+              <h4>50%</h4>
+              <p>Patient appointment time reduced</p>
+            </div>
+          </div>
+          <div class="clinics-patients">
+            <div class="stat-box clinics">
+              <div class="stat-header">
+                <h3><span class="dot clinics-dot"></span>Clinics</h3>
+                <p class="main-text">
+                  <span>$7,600</span> Clinic loses per 1 employed physician due
+                  to burnout
+                </p>
               </div>
-              <div class="detail">
-                <h4>51%</h4>
-                <p>of protocols contain at least 1 missed pathology</p>
-              </div>
-              <div class="detail">
-                <h4>50%</h4>
-                <p>Increased paper work</p>
-              </div>
-              <div class="detail">
-                <h4>50%</h4>
-                <p>Patient appointment time reduced</p>
+            </div>
+            <div class="stat-box patients">
+              <div class="stat-header">
+                <h3><span class="dot patients-dot"></span>Patients</h3>
+                <p class="main-text">
+                  <span>33%</span> of radiology recommendations are not followed
+                </p>
               </div>
             </div>
           </div>
-          <div class="stat-box">
-            <h3>Clinics</h3>
-            <p>$7,600 clinics lose per 1 employed physician due to burnout</p>
-          </div>
-          <div class="stat-box">
-            <h3>Patients</h3>
-            <p>33% of radiology recomendations are not followed</p>
-          </div>
         </div>
       </section>
+
       <section class="solution">
-        <div class="container">
+        <div class="solution-main">
           <h1>Our solution</h1>
           <h2>
             The current medical services process is complex and involves many
-            steps. Our solution helps to seamlessly link these steps together
+            steps. Our solution
+            <span>helps to seamlessly link these steps together</span>
           </h2>
           <p>First comprehensive AI solution in radiology</p>
-          <div class="solution-steps">
-            <div class="step">
-              <h3>Diagnosis</h3>
-            </div>
-            <div class="step">
-              <h3>Processing</h3>
-            </div>
-            <div class="step">
-              <h3>Report</h3>
-            </div>
-            <div class="step">
-              <h3>Post care</h3>
-            </div>
-            <div class="step">
-              <h3>Onlt physician</h3>
-              <p>The doctor will diagnose the scans himself - 30 minutes</p>
-            </div>
-            <div class="step">
-              <h3>By physician</h3>
-              <p>
-                Only the data obtained in the study are taken into account when
-                processing the results
-              </p>
-            </div>
-            <div class="step">
-              <h3>Handwritten report</h3>
-              <p>
-                Physician writes the report independently, which takes time to
-                arrive
-              </p>
-            </div>
-            <div class="step">
-              <h3>Low return performance</h3>
-              <p>Mass patient mailings do not generate significant returns</p>
-            </div>
-          </div>
         </div>
-      </section>
-      <section class="features">
         <div class="container">
-          <div class="feature">
-            <h3>AI scans analysing</h3>
-            <p>AI is helping to analyse the images</p>
-          </div>
-          <div class="feature">
-            <h3>AI for analysing EHR</h3>
-            <p>
-              Comprehensive analysis of the study and electronic medical record
-              data
-            </p>
-          </div>
-          <div class="feature">
-            <h3>Instant reporting</h3>
-            <p>Worklist prioritization and staff notifications</p>
-          </div>
-          <div class="feature">
-            <h3>Personalised Follow-Ups</h3>
-            <p>
-              AI analyses all the patient's examination results and
-              automatically compiles a personalised engagement
-            </p>
+          <div class="solution-steps">
+            <div class="header-row">
+              <div class="header-cell"></div>
+              <div class="header-cell">Diagnosis</div>
+              <div class="header-cell">Processing</div>
+              <div class="header-cell">Report</div>
+              <div class="header-cell">Post care</div>
+            </div>
+            <div class="row">
+              <div class="side-cell">Without xAID</div>
+              <div class="cell">
+                <h3>Only physician</h3>
+                <p>The doctor will diagnose the scans himself - 30 minutes</p>
+              </div>
+              <div class="cell">
+                <h3>By physician</h3>
+                <p>
+                  Only the data obtained in the study are taken into account
+                  when processing the results
+                </p>
+              </div>
+              <div class="cell">
+                <h3>Handwritten report</h3>
+                <p>
+                  Physician writes the report independently, which takes time to
+                  arrive
+                </p>
+              </div>
+              <div class="cell">
+                <h3>Low return performance</h3>
+                <p>Mass patient mailings do not generate significant returns</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="side-cell with-xaid">With xAID</div>
+              <div class="cell with-xaid">
+                <h3>AI scans analysing</h3>
+                <p>AI is helping to analyse the images</p>
+                <div class="sub-details">
+                  <p>Increase the speed</p>
+                  <p>Increased accuracy</p>
+                  <p>Reducing missed diagnoses</p>
+                </div>
+              </div>
+              <div class="cell with-xaid">
+                <h3>AI for analysing EHR</h3>
+                <p>
+                  Comprehensive analysis of the study and electronic medical
+                  record data
+                </p>
+                <div class="sub-details">
+                  <p>Comprehensive examination</p>
+                  <p>Reducing missed diagnoses</p>
+                </div>
+              </div>
+              <div class="cell with-xaid">
+                <h3>Instant reporting</h3>
+                <p>Worklist prioritization and staff notifications</p>
+                <div class="sub-details">
+                  <p>Fast generation</p>
+                  <p>More accurate report</p>
+                  <p>Freeing up the doctor's time</p>
+                </div>
+              </div>
+              <div class="cell with-xaid">
+                <h3>Personalised Follow-Ups</h3>
+                <p>
+                  AI analyses all the patient's examination results and
+                  automatically compiles a personalised engagement
+                </p>
+                <div class="sub-details">
+                  <p>Personalised care</p>
+                  <p>Increase patient returns</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
       <section class="body-parts">
-        <div class="body-img"></div>
-        <div class="container">
-          <h1>Our solution</h1>
-          <h2>Body parts for AI analysing CT/MRI scans:</h2>
-          <ul>
-            <li>Brain CT/MRI</li>
-            <li>Chest CT</li>
-            <li>Abdominal CT</li>
-            <li>Lumbar MRI</li>
-          </ul>
+        <div class="body-img">
+          <img
+            src="imgs/body parts.png"
+            alt="Body Image" />
         </div>
+
+        <img
+          class="brain"
+          src="imgs/dot-brain.svg"
+          alt="" />
+        <img
+          class="chest"
+          src="imgs/dot-chest.svg"
+          alt="" />
+        <img
+          class="abdominal"
+          src="imgs/dot-abdominal.svg"
+          alt="" />
+        <img
+          class="lumbar"
+          src="imgs/dot-lumbar.svg"
+          alt="" />
+
+          <div class="container body-main">
+            <h1>Our solution</h1>
+            <h2>Body parts for AI analysing CT/MRI scans:</h2>
+            <ul class="accordion">
+              <li>
+                <button class="accordion-toggle">Brain CT/MRI</button>
+                <div class="accordion-content">
+                  <ul>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button class="accordion-toggle">Chest CT</button>
+                <div class="accordion-content">
+                  <ul>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button class="accordion-toggle">Abdominal CT</button>
+                <div class="accordion-content">
+                  <ul>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                  </ul>
+                </div>
+              </li>
+              <li>
+                <button class="accordion-toggle">Lumbar MRI</button>
+                <div class="accordion-content">
+                  <ul>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                    <li>AI for analysing CT/MRI scans</li>
+                  </ul>
+                </div>
+              </li>
+            </ul>
+          </div>
       </section>
       <section class="boost">
-        <h1>Our solution</h1>
-        <p>
-          Our AI technology detects pathologies for precise diagnosis and
-          autonomously reminds patients of follow-up visits, enhancing care and
-          communication.
-        </p>
+        <div class="boost-solution">
+          <h1>Our solution</h1>
+          <h2>
+            Our AI technology <span>detects pathologies for precise diagnosis</span> and
+            <span>autonomously reminds patients</span> of follow-up visits, enhancing care
+            and communication.
+          </h2>
+        </div>
         <div class="container">
           <div class="boost-box">
             <h3>Boost your radiology department</h3>
