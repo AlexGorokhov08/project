@@ -20,7 +20,7 @@
 
 body {
   margin: 0;
-  color: var(--text-basic);
+  color: var(--primary-color2);
   line-height: 1.6;
   background: var(--grey);
 }
@@ -166,7 +166,7 @@ body {
   background: var(--white);
 }
 .button::after {
-  content: url(/imgs/btn-arrow.svg);
+  content: url("/imgs/btn-arrow.svg");
   position: absolute;
   width: 7px;
   height: 14px;
@@ -276,7 +276,7 @@ body {
 
 .swiper-diagnosis .swiper-button-next:after {
   position: absolute;
-  content: url(imgs/arrow-next.svg);
+  content: url("imgs/arrow-next.svg");
   bottom: 5px !important;
 }
 
@@ -373,13 +373,14 @@ body {
 
 .swiper-solutions .swiper-button-next:after {
   position: absolute;
-  content: url(imgs/arrow-next.svg);
+  content: url("imgs/arrow-next.svg");
   bottom: 5px !important;
 }
 
 .mission,
 .solution-main,
-.boost-solution {
+.boost-solution,
+.summary-solution {
   background: var(--white);
   border-radius: 10px;
   width: 95%;
@@ -390,7 +391,8 @@ body {
 
 .mission h1,
 .solution-main h1,
-.boost-solution h1 {
+.boost-solution h1,
+.summary-solution h1 {
   text-transform: uppercase;
   padding: 0 0 20px 0;
   font-size: 1.13rem;
@@ -399,7 +401,8 @@ body {
 
 .mission h2,
 .solution-main h2,
-.boost-solution h2 {
+.boost-solution h2,
+.summary-solution h2 {
   font-size: 2.63rem;
   font-weight: 275;
   color: var(--primary-color2);
@@ -407,13 +410,15 @@ body {
 
 .mission span,
 .solution-main span,
-.boost-solution span {
+.boost-solution span,
+.summary-solution span {
   color: var(--primary-color1);
   font-weight: 500;
 }
 
 .mission p,
-.solutiion-main p {
+.solutiion-main p,
+.summary-solution p {
   font-size: 1.13rem;
 }
 
@@ -427,6 +432,7 @@ body {
   padding: 30px;
   background: var(--white);
   border-radius: 10px;
+  color: var(--text-basic);
 }
 
 .stat-box {
@@ -706,7 +712,7 @@ body {
 }
 
 .accordion-toggle:after {
-  content: url(imgs/arrow-down.svg);
+  content: url("imgs/arrow-down.svg");
   position: absolute;
   right: 10px;
   top: 50%;
@@ -715,7 +721,7 @@ body {
 }
 
 .accordion-toggle.active:after {
-  content: url(imgs/arrow-up.svg);
+  content: url("imgs/arrow-up.svg");
 }
 
 .accordion-content {
@@ -755,18 +761,74 @@ body {
 }
 
 .boost {
+  width: 95%;
+  padding: 72px 0 30px;
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: var(--grey);
+  color: var(--white);
 }
 
 .boost-box {
-  flex: 1;
-  margin: 10px;
-  background: var(--grey);
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
+  background-image: url("imgs/marketing.png");
+  background-color: rgba(108, 137, 255, 0.5);
+  background-size: cover;
+  object-fit: cover;
+  background-blend-mode: multiply;
+  border-radius: 10px;
+  padding: 40px;
+  width: 50%;
+  height: 856px;
+  text-align: left;
+  position: relative;
+}
+
+.boost-box img {
+  transform: scale(1.5);
+}
+
+.boost-box:first-child {
+  background-image: url("imgs/radiology.png");
+  background-color: rgba(108, 137, 255, 0.5);
+  background-blend-mode: multiply;
+}
+
+.box-inside {
+  position: relative;
+  padding: 60px 40px;
+  background-color: rgba(108, 137, 255, 0.5);
+  backdrop-filter: blur(10px);
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  z-index: 0;
+}
+
+.box-text {
+  position: relative;
+  z-index: 1;
+}
+
+.boost-box h3 {
+  font-size: 4rem;
+  font-weight: 275;
+  line-height: 100%;
+  margin-bottom: 80px;
+}
+
+.boost-box span {
+  font-weight: 500;
+}
+
+.boost-box p {
+  font-size: 1.63rem;
+  font-weight: 300;
+  margin-bottom: 40px;
+  line-height: 120%;
 }
 
 .boost-box ul {
@@ -775,38 +837,120 @@ body {
 }
 
 .boost-box ul li {
-  margin: 10px 0;
+  display: inline-block;
+  font-size: 1.13rem;
+  margin-bottom: 10px;
+  position: relative;
+  padding: 10px 40px 10px 54px;
+  color: var(--primary-color2);
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.3);
 }
 
-.summary {
-  text-align: center;
-  padding: 20px 0;
+.boost-box ul li::before {
+  content: "";
+  width: 18px;
+  height: 18px;
+  background-color: var(--primary-color1);
+  border-radius: 50%;
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
-.summary-details {
+.advantages {
+  width: 95%;
+  margin: auto;
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+  gap: 10px;
+  background: var(--white);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.advantage {
+  width: 100%;
+  height: 310px;
+  background: var(--grey);
+  border-radius: 10px;
+  font-size: 2.63rem;
+  font-weight: 500;
+  line-height: 120%;
+  color: var(--primary-color1);
+  padding: 40px 40px 90px 40px;
+}
+
+.statistics {
+  width: 95%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 30px 30px 50px;
+  background-color: var(--white);
+  border-radius: 10px;
+}
+
+.details {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  column-gap: 90px;
 }
 
 .detail-box {
-  flex: 1;
-  margin: 10px;
-  background: var(--grey);
-  padding: 20px;
-  border-radius: 5px;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.detail-box h3 {
+  font-size: 6.25rem;
+  font-weight: 500;
+  color: var(--primary-color1);
+  margin: 0;
+  line-height: 1;
+}
+
+.line {
+  width: 150px;
+  height: 1px;
+  background: var(--primary-color2);
+  margin: 10px 0;
+}
+
+.detail-box p {
+  font-size: 2.63rem;
+  font-weight: 275;
+  color: var(--primary-color2);
+  margin: 0;
+  position: relative;
+}
+
+.lungs-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.lungs-img img {
+  width: 100%;
+  border-radius: 10px;
 }
 
 .footer {
   background: var(--primary-color1);
   color: var(--white);
+  border-radius: 10px;
+  width: 95%;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 4px 4px 4px 16px;
-  margin: 30px 0px;
+  margin: 30px auto;
 }
 
 .footer form {
@@ -832,10 +976,6 @@ body {
 }
 
 @media (max-width: 768px) {
-  .container {
-    width: 90%;
-  }
-
   .ai-diagnosis {
     flex-direction: column;
   }
@@ -883,5 +1023,9 @@ body {
 
   .features .container {
     grid-template-columns: repeat(2, 1fr);
+  }
+
+  .boost-box {
+    max-width: 100%;
   }
 }
