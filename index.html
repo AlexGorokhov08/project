@@ -5,10 +5,13 @@
     <meta
       name="viewport"
       content="width=device-width, initial-scale=1.0" />
-    <title>xAID - Radiology Automation</title>
+    <title>xAID</title>
     <link
       rel="stylesheet"
       href="styles.css" />
+    <link
+      rel="stylesheet"
+      href="normalize.css" />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
@@ -17,12 +20,12 @@
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/imgs/favicons/favicon-32x32.png" />
+      href="/img/favicon/favicon-32x32.png" />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/imgs/favicons/favicon-16x16.png" />
+      href="/img/favicon/favicon-16x16.png" />
     <link
       rel="manifest"
       href="/site.webmanifest" />
@@ -40,31 +43,30 @@
         <nav class="nav">
           <div class="logo">
             <img
-              src="imgs/logo.svg"
+              src="img/assets/logo.svg"
               alt="xAID logo" />
           </div>
-          <input
-            type="checkbox"
-            id="nav-toggle" />
-          <label
-            for="nav-toggle"
-            class="nav-toggle-label">
-            <span></span>
-          </label>
+          <div class="burger">
+            <div class="top-string"></div>
+            <div class="middle-string"></div>
+            <div class="bottom-string"></div>
+          </div>
           <ul class="nav-menu">
-            <li><a href="#">About</a></li>
-            <li><a href="#">Problems</a></li>
-            <li><a href="#">Solutions</a></li>
-            <li><a href="#">Achievements</a></li>
-            <li><a href="#">Contact us</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#problems">Problems</a></li>
+            <li><a href="#solutions">Solutions</a></li>
+            <li><a href="#achievements">Achievements</a></li>
+            <li><a href="#email">Contact us</a></li>
           </ul>
           <a
-            href="#"
+            href="#email"
             class="button"
             >Request demo</a
           >
         </nav>
-        <div class="header-content">
+        <div
+          id="about"
+          class="header-content">
           <div class="left-block">
             <h1>End-to-end radiology automation</h1>
             <p>
@@ -72,9 +74,14 @@
               prioritise patients, notify doctors and manage follow-ups
             </p>
             <a
-              href="#"
+              href="#email"
               class="button"
               >Contact us</a
+            >
+            <a
+              href="#email"
+              class="btn"
+              >Request demo</a
             >
           </div>
           <div class="right-block">
@@ -83,28 +90,25 @@
                 <div class="swiper-slide">
                   <h1>AI diagnosis of CT and MRI scans</h1>
                   <img
-                    src="imgs/AI diagnosis.png"
-                    alt="" />
+                    src="img/assets/AI-diagnosis.png"
+                    alt="ai-diagnosis" />
                 </div>
                 <div class="swiper-slide">
                   <h1>AI diagnosis of CT and MRI scans</h1>
-
                   <img
-                    src="imgs/AI diagnosis.png"
-                    alt="" />
+                    src="img/assets/AI-diagnosis.png"
+                    alt="ai-diagnosis" />
                 </div>
                 <div class="swiper-slide">
                   <h1>AI diagnosis of CT and MRI scans</h1>
-
                   <img
-                    src="imgs/AI diagnosis.png"
-                    alt="" />
+                    src="img/assets/AI-diagnosis.png"
+                    alt="ai-diagnosis" />
                 </div>
               </div>
               <div class="swiper-pagination"></div>
               <div class="swiper-button-next"></div>
             </div>
-
             <div class="key-features">
               <div class="feature-box">
                 <p><span>100+</span> hospitales</p>
@@ -113,25 +117,28 @@
                 <div class="swiper swiper-solutions">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
+                      <p>Solution</p>
                       <h1>
                         AI medical visual and linguistic medical data analyzes
                       </h1>
                       <img
-                        src="imgs/marketing.png"
-                        alt="" />
+                        src="img/assets/slider-photo.png"
+                        alt="slider-photo" />
                     </div>
                     <div class="swiper-slide">
+                      <p>Solution</p>
                       <h1>
                         AI medical visual and linguistic medical data analyzes
                       </h1>
                       <img
-                        src="imgs/marketing.png"
-                        alt="" />
+                        src="img/assets/slider-photo.png"
+                        alt="slider-photo" />
                     </div>
                     <div class="swiper-slide">
                       <img
-                        src="imgs/marketing.png"
-                        alt="" />
+                        src="img/assets/slider-photo.png"
+                        alt="slider-photo" />
+                      <p>Solution</p>
                       <h1>
                         AI medical visual and linguistic medical data analyzes
                       </h1>
@@ -149,6 +156,9 @@
     <main>
       <section class="mission">
         <div class="container">
+          <img
+            src="img/assets/waves.svg"
+            alt="waves" />
           <h1>Mission</h1>
           <h2>
             Improving <span>medical diagnostics</span> and
@@ -158,7 +168,9 @@
         </div>
       </section>
       <section class="statistics">
-        <div class="container">
+        <div
+          id="problems"
+          class="container">
           <div class="stat-box doctors">
             <div class="stat-header">
               <h3><span class="dot doctors-dot"></span>Doctors</h3>
@@ -173,8 +185,8 @@
             </div>
             <div class="chart">
               <img
-                src="imgs/stat-chart.png"
-                alt="" />
+                src="img/assets/stat-chart.png"
+                alt="chart" />
             </div>
           </div>
           <div class="stat-details">
@@ -216,9 +228,10 @@
           </div>
         </div>
       </section>
-
       <section class="solution">
-        <div class="solution-main">
+        <div
+          id="solutions"
+          class="solution-main">
           <h1>Our solution</h1>
           <h2>
             The current medical services process is complex and involves many
@@ -230,7 +243,7 @@
         <div class="container">
           <div class="solution-steps">
             <div class="header-row">
-              <div class="header-cell"></div>
+              <div></div>
               <div class="header-cell">Diagnosis</div>
               <div class="header-cell">Processing</div>
               <div class="header-cell">Report</div>
@@ -240,7 +253,9 @@
               <div class="side-cell">Without xAID</div>
               <div class="cell">
                 <h3>Only physician</h3>
-                <p>The doctor will diagnose the scans himself - 30 minutes</p>
+                <p>
+                  The doctor will diagnose the scans himself <br />- 30 minutes
+                </p>
               </div>
               <div class="cell">
                 <h3>By physician</h3>
@@ -265,7 +280,7 @@
               <div class="side-cell with-xaid">With xAID</div>
               <div class="cell with-xaid">
                 <h3>AI scans analysing</h3>
-                <p>AI is helping to analyse the images</p>
+                <p>AI is helping to analyse the images <br />- 10 minutes</p>
                 <div class="sub-details">
                   <p>Increase the speed</p>
                   <p>Increased accuracy</p>
@@ -310,27 +325,9 @@
       <section class="body-parts">
         <div class="body-img">
           <img
-            src="imgs/body parts.png"
-            alt="Body Image" />
+            src="img/assets/body-parts.png"
+            alt="Body" />
         </div>
-
-        <img
-          class="brain"
-          src="imgs/dot-brain.svg"
-          alt="" />
-        <img
-          class="chest"
-          src="imgs/dot-chest.svg"
-          alt="" />
-        <img
-          class="abdominal"
-          src="imgs/dot-abdominal.svg"
-          alt="" />
-        <img
-          class="lumbar"
-          src="imgs/dot-lumbar.svg"
-          alt="" />
-
         <div class="container body-main">
           <h1>Our solution</h1>
           <h2>Body parts for AI analysing CT/MRI scans:</h2>
@@ -414,6 +411,17 @@
           </ul>
         </div>
       </section>
+      <section>
+        <div class="pathologies">
+          <h1>Our solution</h1>
+          <h2>
+            Our AI technology
+            <span>detects pathologies for precise diagnosis</span> and
+            <span>autonomously reminds patients</span> of follow-up visits,
+            enhancing care and communication.
+          </h2>
+        </div>
+      </section>
       <section class="boost">
         <div class="boost-box">
           <div class="box-inside">
@@ -429,6 +437,11 @@
                 <li>Less misdiagnoses and mistreatment</li>
                 <li>Comprehensive examination</li>
               </ul>
+              <a
+                href="#email"
+                class="btn"
+                >Request demo</a
+              >
             </div>
           </div>
         </div>
@@ -448,6 +461,11 @@
                   Automated selection for clinical studies or special treatment
                 </li>
               </ul>
+              <a
+                href="#email"
+                class="btn"
+                >Request demo</a
+              >
             </div>
           </div>
         </div>
@@ -458,7 +476,12 @@
         <div class="advantage"><p>Free for researches</p></div>
       </section>
       <section class="summary">
-        <div class="summary-solution">
+        <div
+          id="achievements"
+          class="summary-solution">
+          <img
+            src="img/assets/waves.svg"
+            alt="waves" />
           <h1>Our solution</h1>
           <h2>
             Improving <span>medical diagnostics</span> and
@@ -467,7 +490,8 @@
           <p>First comprehensive AI solution in radiology</p>
         </div>
       </section>
-      <section class="statistics">
+      <section class="achievements">
+        <h2>xAID have a truly complex solution for these problems:</h2>
         <div class="details">
           <div class="detail-box">
             <h3>100</h3>
@@ -487,8 +511,8 @@
         </div>
         <div class="lungs-img">
           <img
-            src="imgs/lungs.png"
-            alt="Lungs Image" />
+            src="img/assets/lungs.png"
+            alt="Lungs" />
         </div>
       </section>
     </main>
@@ -527,8 +551,8 @@
     </footer>
     <div class="footer-line"></div>
     <section class="privacy">
-      <div class=""><span>Privacy and Policy</span></div>
-      <div class=""><span>All right are reserved ©</span></div>
+      <div class=""><a href="">Privacy and Policy</a></div>
+      <div class=""><a href="">All right are reserved ©</a></div>
     </section>
   </body>
 </html>
