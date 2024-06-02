@@ -366,7 +366,7 @@ body {
 .mission img,
 .summary-solution img {
   position: absolute;
-  top: 30%;
+  top: 20%;
   left: 0;
   width: 100%;
 }
@@ -1147,10 +1147,6 @@ body {
   .show-menu .bottom-string {
     transform: rotate(-45deg);
     top: 11px;
-  }
-
-  .show-menu .mobile-button {
-    display: block;
   }
 
   .header-content {
