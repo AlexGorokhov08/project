@@ -39,31 +39,33 @@
   </head>
   <body>
     <header class="header">
-      <div class="container">
-        <nav class="nav">
-          <div class="logo">
-            <img
-              src="img/assets/logo.svg"
-              alt="xAID logo" />
-          </div>
-          <div class="burger">
-            <div class="top-string"></div>
-            <div class="middle-string"></div>
-            <div class="bottom-string"></div>
-          </div>
-          <ul class="nav-menu">
-            <li><a href="#about">About</a></li>
-            <li><a href="#problems">Problems</a></li>
-            <li><a href="#solutions">Solutions</a></li>
-            <li><a href="#achievements">Achievements</a></li>
-            <li><a href="#email">Contact us</a></li>
-          </ul>
-          <a
-            href="#email"
-            class="button"
-            >Request demo</a
-          >
-        </nav>
+      <nav class="nav">
+        <div class="logo">
+          <img
+            src="img/assets/logo.svg"
+            alt="xAID logo" />
+        </div>
+        <div class="burger">
+          <div class="top-string"></div>
+          <div class="middle-string"></div>
+          <div class="bottom-string"></div>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#problems">Problems</a></li>
+          <li><a href="#solutions">Solutions</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#email">Contact us</a></li>
+        </ul>
+        <a
+          href="#email"
+          class="button"
+          >Request demo</a
+        >
+      </nav>
+    </header>
+    <main>
+      <section>
         <div
           id="about"
           class="header-content">
@@ -113,7 +115,7 @@
               <div class="feature-box">
                 <p><span>100+</span> hospitales</p>
               </div>
-              <div class="feature-box">
+              <div class="box-swiper">
                 <div class="swiper swiper-solutions">
                   <div class="swiper-wrapper">
                     <div class="swiper-slide">
@@ -151,9 +153,7 @@
             </div>
           </div>
         </div>
-      </div>
-    </header>
-    <main>
+      </section>
       <section class="mission">
         <div class="container">
           <img
@@ -329,8 +329,10 @@
             alt="Body" />
         </div>
         <div class="container body-main">
-          <h1>Our solution</h1>
-          <h2>Body parts for AI analysing CT/MRI scans:</h2>
+          <div class="body-main_text-content">
+            <h1>Our solution</h1>
+            <h2>Body parts for AI analysing <br />CT/MRI scans:</h2>
+          </div>
           <ul class="accordion">
             <li>
               <button class="accordion-toggle">Brain CT/MRI</button>
@@ -426,16 +428,26 @@
         <div class="boost-box">
           <div class="box-inside">
             <div class="box-text">
-              <h3>Boost your <span>radiology</span> department</h3>
-              <p>
+              <h3 class="boost-box_title">
+                Boost your <span>radiology</span> department
+              </h3>
+              <p class="boost-box_description">
                 Since 2020, we've developed the most comprehensive solution on
                 the market, covering most important parts of the body
               </p>
-              <ul>
-                <li>Accurate diagnosis in shorter time</li>
-                <li>Less physician burnout</li>
-                <li>Less misdiagnoses and mistreatment</li>
-                <li>Comprehensive examination</li>
+              <ul class="boost-box_list">
+                <li>
+                  <p class="boost_li-text">
+                    Accurate diagnosis in shorter time
+                  </p>
+                </li>
+                <li><p class="boost_li-text">Less physician burnout</p></li>
+                <li>
+                  <p class="boost_li-text">
+                    Less misdiagnoses and mistreatment
+                  </p>
+                </li>
+                <li><p class="boost_li-text">Comprehensive examination</p></li>
               </ul>
               <a
                 href="#email"
@@ -448,17 +460,24 @@
         <div class="boost-box">
           <div class="box-inside">
             <div class="box-text">
-              <h3>Boost your <span>marketing</span> department</h3>
-              <p>
+              <h3 class="boost-box_title">
+                Boost your <span>marketing</span> department
+              </h3>
+              <p class="boost-box_description">
                 With our expanded product line, we now offer automated marketing
                 for hospitals, helping them boost their revenue even further
               </p>
-              <ul>
-                <li>Personalized communication</li>
-                <li>Patients post care</li>
-                <li>Increasing customer satisfaction</li>
+              <ul class="boost-box_list">
+                <li><p class="boost_li-text">Personalized communication</p></li>
+                <li><p class="boost_li-text">Patients post care</p></li>
                 <li>
-                  Automated selection for clinical studies or special treatment
+                  <p class="boost_li-text">Increasing customer satisfaction</p>
+                </li>
+                <li>
+                  <p class="boost_li-text">
+                    Automated selection for clinical studies or special
+                    treatment
+                  </p>
                 </li>
               </ul>
               <a
