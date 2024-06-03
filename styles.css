@@ -1223,50 +1223,50 @@ body {
     font-size: 1rem;
     margin-top: 20px;
   }
-}
 
-.stat-box {
-  padding: 30px;
-}
+  .stat-box {
+    padding: 30px;
+  }
 
-.stat-box.clinics,
-.stat-box.patients {
-  padding: 30px;
-}
+  .stat-box.clinics,
+  .stat-box.patients {
+    padding: 30px;
+  }
 
-.stat-box.clinics .main-text,
-.stat-box.patients .main-text {
-  font-size: 1.5rem;
-}
+  .stat-box.clinics .main-text,
+  .stat-box.patients .main-text {
+    font-size: 1.5rem;
+  }
 
-.clinics-patients span {
-  font-size: 3.5rem;
-}
+  .clinics-patients span {
+    font-size: 3.5rem;
+  }
 
-.stat-header h3 {
-  font-size: 1.4rem;
-}
+  .stat-header h3 {
+    font-size: 1.4rem;
+  }
 
-.stat-header p {
-  font-size: 1rem;
-}
+  .stat-header p {
+    font-size: 1rem;
+  }
 
-.stat-header .dot {
-  width: 20px;
-  height: 20px;
-}
+  .stat-header .dot {
+    width: 20px;
+    height: 20px;
+  }
 
-.stat-header .main-text {
-  font-size: 2rem;
-  margin: 20px 0 50px;
-}
+  .stat-header .main-text {
+    font-size: 2rem;
+    margin: 20px 0 50px;
+  }
 
-.detail {
-  padding: 18px;
-}
+  .detail {
+    padding: 18px;
+  }
 
-.detail h4 {
-  font-size: 1.3rem;
+  .detail h4 {
+    font-size: 1.3rem;
+  }
 }
 
 @media (max-width: 1152px) {
