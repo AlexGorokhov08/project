@@ -2000,6 +2000,7 @@ body {
     padding: 20px 0;
     font-size: 0.75rem;
   }
+  
   @media (max-width: 440px) {
     .header-content h1 {
       font-size: 1.5rem;
