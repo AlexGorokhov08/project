@@ -14,7 +14,6 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  /* border: 1px solid; */
 }
 
 html {
@@ -645,7 +644,7 @@ body {
 }
 
 .body-main_text-content {
-  margin-bottom: 83px;
+  margin-bottom: 58px;
 }
 
 .accordion {
@@ -1011,7 +1010,7 @@ body {
   color: var(--primary-color2);
 }
 
-@media (max-width: 1371px) {
+@media (max-width: 1386px) {
   .swiper-diagnosis .swiper-slide img {
     bottom: 0;
     height: 218px;
@@ -1024,10 +1023,10 @@ body {
   }
 
   .body-main_text-content {
-    margin-bottom: 104px;
+    margin-bottom: 74px;
   }
   .body-parts h2 {
-    font-size: 2.5rem;
+    font-size: 2.3rem;
   }
 
   .header-row,
@@ -1066,9 +1065,9 @@ body {
     left: 12px;
   }
 
-  .cell.with-xaid {
-    display: block;
-  }
+  /*.cell.with-xaid {*/
+  /*  display: block;*/
+  /*}*/
 
   .solution-steps {
     grid-template-columns: 1fr;
@@ -1114,10 +1113,14 @@ body {
   }
 }
 
-@media (max-width: 1312px) {
+@media (max-width: 1314px) {
   .swiper-solutions h1 {
     font-size: 1.5rem;
     padding: 48px 26px 69px 20px;
+  }
+
+  .body-main {
+    padding-top: 0;
   }
 
   .body-parts h1 {
@@ -1339,7 +1342,7 @@ body {
   }
 }
 
-@media (max-width: 936px) {
+@media (max-width: 950px) {
   .nav {
     padding: 24px 10px;
   }
@@ -1385,13 +1388,13 @@ body {
   }
 
   .body-parts h2 {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   .body-img img {
     height: 367px;
   }
   .body-main_text-content {
-    margin-bottom: 24px;
+    margin-bottom: 28px;
   }
   .accordion-content li {
     font-size: 1rem;
@@ -1496,6 +1499,15 @@ body {
     background: var(--primary-color1);
     opacity: 0;
     visibility: hidden;
+  }
+
+  .swiper-diagnosis .swiper-button-next,
+  .swiper-solutions .swiper-button-next {
+    display: none;
+  }
+
+  .swiper-solutions .swiper-pagination-bullet {
+    width: 79px;
   }
 
   .left-block .button,
@@ -1685,7 +1697,7 @@ body {
   }
 
   .cell.with-xaid h3 {
-    margin-left: 0;
+    padding-left: 0;
   }
 
   .cell.with-xaid h3:before {
@@ -1987,5 +1999,10 @@ body {
     margin: auto;
     padding: 20px 0;
     font-size: 0.75rem;
+  }
+  @media (max-width: 440px) {
+    .header-content h1 {
+      font-size: 1.5rem;
+    }
   }
 }
